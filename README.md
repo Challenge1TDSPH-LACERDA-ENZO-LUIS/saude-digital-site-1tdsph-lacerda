@@ -66,8 +66,15 @@ Este projeto está sob a licença [MIT](LICENSE).
 
 ## 👥 Equipe
 
+### Desenvolvedores:
+- João Vitor Lacerda Consorte
+- Enzo Ricarte Medeiros
+- Luiz Gustavo Albuquerque Barrios Guedes
+
+### Instituição
+- FIAP
 - IMREA HCFMUSP
-- Equipe de Saúde Digital
+- Turma 1TDSPH
 
 ## 📞 Contato
 
@@ -83,4 +90,4 @@ Para mais informações, entre em contato:
 
 ---
 
-Desenvolvido com ❤️ pela equipe de Saúde Digital IMREA HCFMUSP
+Desenvolvido com ❤️ pela equipe do challenge HC. 1TDSPH
