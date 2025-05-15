@@ -3,63 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Equipe multidisciplinar do projeto Saúde Digital IMREA HCFMUSP.">
+    <meta property="og:title" content="Equipe - Saúde Digital IMREA HCFMUSP">
+    <meta property="og:description" content="Conheça a equipe multidisciplinar dedicada à inovação e atendimento humanizado.">
+    <meta property="og:image" content="assets/Favicon.png">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Equipe - Saúde Digital IMREA HCFMUSP">
+    <meta name="twitter:description" content="Conheça a equipe multidisciplinar dedicada à inovação e atendimento humanizado.">
+    <meta name="twitter:image" content="assets/Favicon.png">
+    <link rel="canonical" href="https://www.seusite.com/integrantes.html">
     <title>Equipe - Saúde Digital IMREA HCFMUSP</title>
-    <link rel="stylesheet" href="css/saude-digital.css">
+    <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/integrantes.css">
-    <link rel="icon" type="image/png" href=""assets/LogoeFavicon.png">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/Favicon.png">
 </head>
 <body>
     <header>
-        <div class="container header-flex">
-            <img src="assets/LogoeFavicon.png" alt="Logo Saúde Digital" class="logo-header">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="about.html">Sobre</a></li>
-                    <li><a href="integrantes.html">Equipe</a></li>
-                    <li><a href="services.html">Serviços</a></li>
-                    <li><a href="portfolio.html">Materiais</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="contact.html">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
+        <script src="js/header.js" defer></script>
+        <div id="header"></div>
     </header>
-    <main>
+    <main id="main-content">
         <section id="integrantes">
             <div class="container">
                 <h2>Equipe Saúde Digital</h2>
                 <p>O projeto conta com uma equipe multidisciplinar dedicada à inovação, atendimento humanizado e suporte digital, conforme as diretrizes do IMREA/HCFMUSP.</p>
-                <img src="assets/LogoeFavicon.png" alt="Logo Saúde Digital IMREA HCFMUSP">
-                <p>
-                    Nome: João Vitor Lacerda Consorte
-                    <br>
-                    RM: 99999
-                <img src="exemplo.jpg" alt="Exemplo" width="150px">
-                </p>
-
-                <p>
-                    Nome: Enzo Ricarte Medeiros
-                    <br>
-                    RM: 99999
-                <img src="exemplo.jpg" alt="Exemplo" width="150px">
-                </p>
-
-                <p>
-                    Nome: Luiz Gustavo Albuquerque Barrios Guedes
-                    <br>
-                    RM: 99999
-                <img src="exemplo.jpg" alt="Exemplo" width="150px">
-                </p>
-
-
+                <div class="equipe-grid">
+                    <div class="membro">
+                        <img src="assets/Integrante.jpg" alt="Foto do Membro 1" class="foto-membro" style="object-fit: cover; width: 150px; height: 150px;">
+                        <h3>João Vitor Lacerda Consorte</h3>
+                        <p class="rm">RM: 565565</p>
+                        <p class="cargo">Desenvolvedor Front-end e Designer</p>
+                        <a href="https://github.com/joaolacerdaconsorte" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <div class="membro">
+                        <img src="assets/Integrante1.jpg" alt="Foto do Membro 2" class="foto-membro" style="object-fit: cover; width: 150px; height: 150px;">
+                        <h3>Luiz Gustavo Albuquerque Barrios Guedes</h3>
+                        <p class="rm">RM: 565843</p>
+                        <p class="cargo">Desenvolvedor Front-end</p>
+                        <a href="https://github.com/oLuizGuedes" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <div class="membro">
+                        <img src="assets/logohc.png" alt="Foto do Membro 3" class="foto-membro" style="object-fit: cover; width: 150px; height: 150px;">
+                        <h3>Enzo Ricarte Medeiros</h3>
+                        <p class="rm">RM: 566053</p>
+                        <p class="cargo">Designer UI/UX</p>
+                        <a href="https://github.com/ricarteenzo" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Saúde Digital IMREA HCFMUSP. Todos os direitos reservados.</p>
-        </div>
-    </footer>
+    <div id="footer"></div>
+    <script src="js/footer.js" defer></script>
+    <script src="js/menu.js" defer></script>
+    <script src="js/logo.js" defer></script>
 </body>
 </html> 
