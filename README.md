@@ -35,21 +35,31 @@ git clone [URL_DO_REPOSITÓRIO]
 ## 📱 Estrutura do Projeto
 
 ```
+/saude-digital-site-1tdsph-lacerda/
+│
 ├── index.html
-├── about.html
-├── integrantes.html
-├── services.html
-├── portfolio.html
-├── faq.html
-├── contact.html
+├── sobre.html
+├── contato.html
+├── servicos.html
+│
 ├── css/
 │   ├── base.css
-│   └── saude-digital.css
+│   ├── contact.css
+│   ├── about.css
+│   ├── faq.css
+│   └── tutoriais.css
+│
 ├── js/
-│   └── main.js
-└── assets/
-    └── [imagens e recursos]
-```
+│   └── footer.js
+│
+├── componentes/
+│   └── footer.html
+│
+├── imagens/
+│   └── (todas as imagens do site)
+│
+└── (outros diretórios ou arquivos auxiliares, como favicon, fontes etc.)
+
 
 ## 🎨 Design
 
