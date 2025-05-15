@@ -23,23 +23,7 @@ header {
     height: 56px;
     margin-right: 2rem;
 }
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 1.2rem;
-    margin: 0;
-    padding: 0;
-}
-nav a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 1.05rem;
-    transition: color 0.2s;
-}
-nav a:hover {
-    color: #ff9800;
-}
+/* Todas as regras de nav ul, nav a, nav a:hover, nav a.active removidas para padronização no base.css */
 .container {
     max-width: 900px;
     margin: 0 auto;
@@ -71,12 +55,36 @@ section img {
     box-shadow: 0 2px 12px rgba(0,0,0,0.06);
 }
 footer {
-    background: #009fe3;
-    color: #fff;
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--dark-blue) 100%);
+    color: var(--white);
     text-align: center;
-    padding: 1.2rem 0 1rem 0;
-    font-size: 1rem;
-    border-radius: 12px 12px 0 0;
+    padding: 2.5rem 0;
+    font-size: 1.1rem;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.1);
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+    z-index: 1;
+}
+
+footer .container {
+    position: relative;
+    z-index: 2;
+}
+
+footer p {
+    margin: 0;
+    font-weight: 500;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 @media (max-width: 700px) {
     .header-flex {
@@ -84,11 +92,7 @@ footer {
         align-items: flex-start;
         padding: 1rem;
     }
-    nav ul {
-        flex-direction: column;
-        gap: 0.5rem;
-        width: 100%;
-    }
+    /* Todas as regras de nav ul, nav a, nav a:hover, nav a.active removidas para padronização no base.css */
     .logo-header {
         margin-bottom: 1rem;
     }
