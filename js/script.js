@@ -36,4 +36,24 @@ document.addEventListener('DOMContentLoaded', () => {
     scrollToTopBtn.addEventListener('click', () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
+
+    // FAQ Interatividade
+    const faqItems = document.querySelectorAll('.faq-item h3');
+    
+    faqItems.forEach(item => {
+        item.addEventListener('click', function() {
+            const parent = this.parentElement;
+            const isActive = parent.classList.contains('active');
+            
+            // Fecha todos os outros itens
+            document.querySelectorAll('.faq-item').forEach(faqItem => {
+                faqItem.classList.remove('active');
+            });
+            
+            // Se o item clicado não estava ativo, ativa ele
+            if (!isActive) {
+                parent.classList.add('active');
+            }
+        });
+    });
 });
