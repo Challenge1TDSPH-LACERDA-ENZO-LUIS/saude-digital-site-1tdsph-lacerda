@@ -3,43 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Serviços Digitais - Saúde Digital IMREA HCFMUSP</title>
-    <link rel="stylesheet" href="css/saude-digital.css">
-    <link rel="icon" type="image/png" href="assets/InstrucoesdoChallengeHC-01.png">
+    <meta name="description" content="Serviços digitais e teleconsultas do IMREA HCFMUSP.">
+    <meta property="og:title" content="Serviços Digitais - Saúde Digital IMREA HCFMUSP">
+    <meta property="og:description" content="Conheça os serviços digitais, teleconsultas e suporte remoto do IMREA HCFMUSP.">
+    <meta property="og:image" content="assets/Favicon.png">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Serviços Digitais - Saúde Digital IMREA HCFMUSP">
+    <meta name="twitter:description" content="Conheça os serviços digitais, teleconsultas e suporte remoto do IMREA HCFMUSP.">
+    <meta name="twitter:image" content="assets/Favicon.png">
+    <link rel="canonical" href="https://www.seusite.com/services.html">
+    <title>Agendamento de consultas</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/Favicon.png">
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
     <header>
-        <div class="container header-flex">
-            <img src="assets/InstrucoesdoChallengeHC-01.png" alt="Logo Saúde Digital" class="logo-header">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="about.html">Sobre</a></li>
-                    <li><a href="integrantes.html">Equipe</a></li>
-                    <li><a href="services.html">Serviços</a></li>
-                    <li><a href="portfolio.html">Materiais</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="contact.html">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
+        <div id="header"></div>
+        <script src="js/header.js" defer></script>
     </header>
-    <main>
-        <section id="services">
-            <div class="container">
-                <h2>Serviços Digitais e Teleconsultas</h2>
-                <p>O IMREA/HCFMUSP oferece serviços digitais inovadores, incluindo teleconsultas, acompanhamento remoto, suporte digital ao paciente e integração de dados para melhorar a experiência e o acesso à saúde.</p>
-                <img src="assets/InstrucoesdoChallengeHC-06.png" alt="Teleconsultas no IMREA">
-                <img src="assets/InstrucoesdoChallengeHC-07.png" alt="Sejam bem-vindos à Saúde Digital" class="img-main">
-                <img src="assets/InstrucoesdoChallengeHC-08.png" alt="Cadastro no Portal do Paciente">
-                <img src="assets/InstrucoesdoChallengeHC-09.png" alt="Como acessar a Teleconsulta">
-            </div>
-        </section>
-    </main>
-    <footer>
+<main id="main-content">
+    <section id="services">
         <div class="container">
-            <p>&copy; 2025 Saúde Digital IMREA HCFMUSP. Todos os direitos reservados.</p>
+            <h2>Serviços Digitais e Teleconsultas</h2>
+            <p>Aqui você pode agendar consultas com os médicos do IMREA/HCFMUSP e acompanhar o status das consultas.</p>
+            <img src="assets/InstrucoesdoChallengeHC-06.png" alt="Teleconsultas no IMREA" style="object-fit:cover;max-width:100%;height:auto;">
+            <img src="assets/InstrucoesdoChallengeHC-07.png" alt="Sejam bem-vindos à Saúde Digital" class="img-main" style="object-fit:cover;max-width:100%;height:auto;">
+            <img src="assets/InstrucoesdoChallengeHC-08.png" alt="Cadastro no Portal do Paciente" style="object-fit:cover;max-width:100%;height:auto;">
+            <img src="assets/InstrucoesdoChallengeHC-09.png" alt="Como acessar a Teleconsulta" style="object-fit:cover;max-width:100%;height:auto;">
+            <!-- NOVA SEÇÃO DE AGENDAMENTO -->
+            <section id="agendamento" style="margin-top: 3rem;">
+                <h3>Agendamento de Consultas</h3>
+                <p>Preencha o formulário abaixo para simular o agendamento de sua consulta com nossa equipe médica.</p>
+                <form id="form-agendamento" class="form-agendamento">
+                    <label for="nome">Nome completo:</label>
+                    <input type="text" id="nome" name="nome" required placeholder="Seu nome">
+            
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required placeholder="seuemail@exemplo.com">
+            
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" required placeholder="(11) 99999-9999">
+            
+                    <label for="data">Data desejada:</label>
+                    <input type="date" id="data" name="data" required>
+            
+                    <label for="especialidade">Especialidade:</label>
+                    <select id="especialidade" name="especialidade" required>
+                        <option value="">Selecione</option>
+                        <option value="psiquia">Psiquiatria</option>
+                        <option value="fisiatria">Fisiatria</option>
+                        <option value="neurologia">Neurologia</option>
+                        <option value="ortopedia">Ortopedia</option>
+                        <option value="reumatologia">Reumatologia</option>
+                    </select>
+            
+                    <button type="submit" class="btn-agendar">Agendar Consulta</button>
+                </form>
+                <p id="mensagem-sucesso" style="display:none; color: green; margin-top: 1rem;">
+                    Consulta agendada com sucesso! Entraremos em contato por e-mail.
+                </p>
+            </section>
+            <!-- FIM DA NOVA SEÇÃO -->
         </div>
-    </footer>
+    </section>
+</main>
+<!-- ... trecho posterior inalterado ... -->
+    <div id="footer"></div>
+    <script src="js/footer.js" defer></script>
+    <script src="js/menu.js" defer></script>
+    <script src="js/logo.js" defer></script>
+    <script>
+        document.getElementById("form-agendamento").addEventListener("submit", function(event) {
+            event.preventDefault(); // impede recarregamento da página
+            document.getElementById("mensagem-sucesso").style.display = "block";
+            this.reset(); // limpa o formulário
+        });
+        </script>        
 </body>
 </html> 
