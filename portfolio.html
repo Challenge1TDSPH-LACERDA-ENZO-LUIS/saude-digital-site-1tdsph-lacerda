@@ -3,50 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Materiais e documentos do projeto Saúde Digital IMREA HCFMUSP.">
+    <meta property="og:title" content="Materiais - Saúde Digital IMREA HCFMUSP">
+    <meta property="og:description" content="Acesse todos os materiais, slides e documentos do projeto Saúde Digital IMREA HCFMUSP.">
+    <meta property="og:image" content="assets/Favicon.png">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Materiais - Saúde Digital IMREA HCFMUSP">
+    <meta name="twitter:description" content="Acesse todos os materiais, slides e documentos do projeto Saúde Digital IMREA HCFMUSP.">
+    <meta name="twitter:image" content="assets/Favicon.png">
+    <link rel="canonical" href="https://www.seusite.com/portfolio.html">
     <title>Materiais - Saúde Digital IMREA HCFMUSP</title>
-    <link rel="stylesheet" href="css/saude-digital.css">
+    <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/portfolio.css">
-    <link rel="icon" type="image/png" href="assets/InstrucoesdoChallengeHC-01.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/Favicon.png">
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
     <header>
-        <div class="container header-flex">
-            <img src="assets/InstrucoesdoChallengeHC-01.png" alt="Logo Saúde Digital" class="logo-header">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="about.html">Sobre</a></li>
-                    <li><a href="integrantes.html">Equipe</a></li>
-                    <li><a href="services.html">Serviços</a></li>
-                    <li><a href="portfolio.html">Materiais</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="contact.html">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
+        <script src="js/header.js" defer></script>
+        <div id="header"></div>
     </header>
-    <main>
-        <section id="materiais">
+    <main id="main-content">
+        <section class="materiais-section">
             <div class="container">
                 <h2>Materiais e Documentos</h2>
-                <ul>
-                    <li><a href="1TDS%20Fevereiro%20-%20Challenge%202025%20-%201%C2%BA%20Semestre.pdf" target="_blank">Challenge 2025 - 1º Semestre (PDF)</a></li>
-                    <li><a href="Apresenta%C3%A7%C3%A3o%20Sa%C3%BAde%20Digital%20-%20FIAP.pptx.pdf" target="_blank">Apresentação Saúde Digital - FIAP (PDF)</a></li>
-                    <li><a href="Intru%C3%A7%C3%B5es.pdf" target="_blank">Instruções do Desafio (PDF)</a></li>
-                </ul>
-                <div style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; margin-top: 2rem;">
-                    <img src="assets/InstrucoesdoChallengeHC-01.png" alt="Logo Saúde Digital" style="max-width: 180px;">
-                    <img src="assets/InstrucoesdoChallengeHC-02.png" alt="Transformação Digital" style="max-width: 180px;">
-                    <img src="assets/InstrucoesdoChallengeHC-03.png" alt="Estratégia Nacional" style="max-width: 180px;">
-                    <img src="assets/InstrucoesdoChallengeHC-04.png" alt="Plano HCFMUSP" style="max-width: 180px;">
+                <p class="section-description">Acesse aqui todos os materiais e documentos relacionados ao projeto de Saúde Digital do IMREA HCFMUSP.</p>
+                <div class="materiais-grid">
+                    <div class="material-card">
+                        <div class="material-icon">
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+                        <h3>Challenge 2025 - 1º Semestre</h3>
+                        <p>Documento com as diretrizes do Challenge 2025 - 1º Semestre</p>
+                        <a href="docs/1TDS Fevereiro - Challenge 2025 - 1º Semestre.pdf" target="_blank" class="btn-download" aria-label="Baixar Challenge 2025 - 1º Semestre (PDF)">
+                            <span>Baixar PDF</span>
+                            <i class="fas fa-download"></i>
+                        </a>
+                    </div>
+                    <div class="material-card">
+                        <div class="material-icon">
+                            <i class="fas fa-file-powerpoint"></i>
+                        </div>
+                        <h3>Apresentação Saúde Digital - FIAP</h3>
+                        <p>Slides da apresentação sobre Saúde Digital - FIAP</p>
+                        <a href="docs/Apresentação Saúde Digital - FIAP.pptx.pdf" target="_blank" class="btn-download" aria-label="Baixar Apresentação Saúde Digital - FIAP (PDF)">
+                            <span>Baixar PDF</span>
+                            <i class="fas fa-download"></i>
+                        </a>
+                    </div>
+                    <div class="material-card">
+                        <div class="material-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <h3>Instruções do Desafio</h3>
+                        <p>Documento com as instruções detalhadas do desafio</p>
+                        <a href="docs/Intruções.pdf" target="_blank" class="btn-download" aria-label="Baixar Instruções do Desafio (PDF)">
+                            <span>Baixar PDF</span>
+                            <i class="fas fa-download"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="imagens-grid">
+                    <div class="imagem-card">
+                        <img src="assets/LogoeFavicon.png" alt="Logo Saúde Digital" style="object-fit:contain;max-width:100%;height:140px;display:block;margin:0 auto 1.2rem auto;">
+                        <p>Logo Saúde Digital</p>
+                    </div>
+                    <div class="imagem-card">
+                        <img src="assets/InstrucoesdoChallengeHC-02.png" alt="Transformação Digital" style="object-fit:cover;max-width:100%;height:auto;">
+                        <p>Transformação Digital</p>
+                    </div>
+                    <div class="imagem-card">
+                        <img src="assets/InstrucoesdoChallengeHC-03.png" alt="Estratégia Nacional" style="object-fit:cover;max-width:100%;height:auto;">
+                        <p>Estratégia Nacional</p>
+                    </div>
+                    <div class="imagem-card">
+                        <img src="assets/InstrucoesdoChallengeHC-04.png" alt="Plano HCFMUSP" style="object-fit:cover;max-width:100%;height:auto;">
+                        <p>Plano HCFMUSP</p>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Saúde Digital IMREA HCFMUSP. Todos os direitos reservados.</p>
-        </div>
-    </footer>
+    <div id="footer"></div>
+    <script src="js/footer.js" defer></script>
+    <script src="js/menu.js" defer></script>
+    <script src="js/logo.js" defer></script>
 </body>
 </html> 
