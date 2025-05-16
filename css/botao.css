@@ -1,0 +1,51 @@
+/* botao.css */
+
+/* Botão base para Texto em Fala */
+.btn-voz {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Ícone de som (opcional) */
+.btn-voz i {
+    font-size: 1.2rem;
+}
+
+/* Efeito ao passar o mouse */
+.btn-voz:hover {
+    background-color: #45a049;
+    transform: scale(1.03);
+}
+
+/* Efeito quando o botão está "falando" (ativo) */
+.btn-voz.ativo {
+    background-color: #2e7d32;
+    animation: pulsar 1s infinite;
+}
+
+/* Animação de pulsação */
+@keyframes pulsar {
+    0% { box-shadow: 0 0 0 0 rgba(46, 125, 50, 0.6); }
+    70% { box-shadow: 0 0 0 10px rgba(46, 125, 50, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(46, 125, 50, 0); }
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+    .btn-voz {
+        width: 100%;
+        font-size: 1.1rem;
+    }
+}
