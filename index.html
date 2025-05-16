@@ -18,12 +18,13 @@
     <title>Saúde Digital - IMREA HCFMUSP</title>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/botao.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="assets/Favicon.png">
-</head>
+    </head>
 <body>
     <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
     <header>
@@ -41,6 +42,9 @@
                     No IMREA, investimos em soluções digitais acessíveis, seguras e centradas no paciente, ampliando o alcance dos nossos serviços e fortalecendo a humanização do cuidado. Nosso compromisso é democratizar o acesso à saúde de qualidade, reduzir barreiras e contribuir para um sistema de saúde mais eficiente, inovador e sustentável.<br><br>
                     Junte-se a nós nessa jornada de transformação digital e descubra como a tecnologia pode melhorar vidas, promover inclusão e construir um futuro mais saudável para todos.
                 </p>
+                <button onclick="lerTexto('.hero-description')" class="btn-voz" aria-label="Ouvir descrição em áudio">
+                    <i class="fas fa-volume-up"></i> Ouvir descrição
+                </button>
             </div>
         </section>
 
@@ -191,5 +195,6 @@
     <script src="js/footer.js" defer></script>
     <script src="js/menu.js" defer></script>
     <script src="js/logo.js" defer></script>
+    <script>function lerTexto(s){const e=document.querySelector(s);if(!e)return;const t=e.textContent,n=window.speechSynthesis,o=new SpeechSynthesisUtterance(t);o.lang="pt-BR",n.cancel(),n.speak(o);}</script>
 </body>
 </html>
