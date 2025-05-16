@@ -35,7 +35,8 @@
             <div class="container">
                 <h2>Entre em Contato</h2>
                 <p>Para dúvidas, sugestões ou informações sobre Saúde Digital, entre em contato pelo e-mail institucional:</p>
-                <p><a href="mailto:saudedigital@hc.fm.usp.br">saudedigital@hc.fm.usp.br</a></p>
+                <button onclick="lerTexto('.hero-description')" class="btn-voz" aria-label="Ouvir descrição em áudio">
+                    <i class="fas fa-volume-up"></i> Ouvir descrição
             </div>
             <div class="container">
                 <h2>Entre em Contato pelo Telefone</h2>
@@ -48,5 +49,24 @@
     <script src="js/footer.js" defer></script>
     <script src="js/menu.js" defer></script>
     <script src="js/logo.js" defer></script>
+    <script>
+    function lerTexto(selector) {
+        const elemento = document.querySelector(selector);
+        if (!elemento) return;
+
+        const texto = elemento.textContent;
+        const sintese = window.speechSynthesis;
+        const fala = new SpeechSynthesisUtterance(texto);
+
+        // Definir idioma (português brasileiro)
+        fala.lang = 'pt-BR';
+
+        // Opcional: parar qualquer fala anterior
+        sintese.cancel();
+
+        // Iniciar fala
+        sintese.speak(fala);
+    }
+    </script>
 </body>
 </html> 
