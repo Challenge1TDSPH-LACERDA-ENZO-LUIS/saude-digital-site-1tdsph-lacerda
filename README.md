@@ -70,10 +70,6 @@ O projeto utiliza um design moderno e profissional com:
 - Animações suaves
 - Elementos interativos
 
-## 📄 Licença
-
-Este projeto está sob a licença [MIT](LICENSE).
-
 ## 👥 Equipe
 
 ### Desenvolvedores:
